@@ -1,7 +1,8 @@
 cmake_minimum_required (VERSION 3.8)
 
-add_executable(calculator main.cpp)
+project(calculator)
 
-include_directories(../calculator_library)
-target_link_libraries(calculator calculator_library)
-# install(TARGETS calculator RUNTIME DESTINATION bin)
+add_executable(${PROJECT_NAME} main.cpp)
+
+target_link_libraries(${PROJECT_NAME} 
+    calculator_library)
