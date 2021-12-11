@@ -1,7 +1,7 @@
 #pragma once
 
 #ifdef _WINDLL
-#define WIN_EXPORT __declspec(dllexport)
+    #define WIN_EXPORT __declspec(dllexport)
 #else
-#define WIN_EXPORT
+    #define WIN_EXPORT
 #endif
