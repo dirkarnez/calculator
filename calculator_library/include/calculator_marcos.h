@@ -1,7 +1,11 @@
 #pragma once
 
-#ifdef _WINDLL
-    #define WIN_EXPORT __declspec(dllexport)
-#else
-    #define WIN_EXPORT
+#if defined(_WIN32)
+#  if defined(_WINDLL)
+#    define DECLSPEC __declspec(dllexport)
+#  else
+#    define DECLSPEC
+#  endif
+#else // non windows
+#  define DECLSPEC
 #endif

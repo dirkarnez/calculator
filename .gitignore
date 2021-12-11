@@ -33,3 +33,5 @@
 
 .vs
 /build
+/CMakeFiles
+CMakeCache.txt
