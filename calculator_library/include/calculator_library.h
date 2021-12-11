@@ -19,7 +19,7 @@ int Calculator_Add(int n1, int n2)
 }
 
 extern "C" WIN_EXPORT
-char* HelloWorld()
+int HelloWorld()
 {
-	return "Hello World From C++";
+	return 123;
 }
