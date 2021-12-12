@@ -10,6 +10,10 @@ int main()
 
 	cout << "2 + 3 = " << Calculator_Add(2, 3) << endl;
 
+	cout << "5 / 0 = " << calcualtor.Div(5, 0) << endl;
+	
+	cout << "10 / 2 = " << calcualtor.Div(10, 2) << endl;
+
 	system("pause");
 	return 0;
 }
